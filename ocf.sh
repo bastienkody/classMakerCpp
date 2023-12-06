@@ -11,6 +11,8 @@
 			#	copy constructor
 			#	copy assignement operator
 			#	destructor
+			#	<< overload operator (out of the class bc can't redefine a iostream operator ; not required for ocf but usefull)
+			#	member function that turn (=serialize) the instance into a readable string
 	#	ClassName.cpp, with :
 		#	include ClassName.hpp
 		#	empty body function definition of const/dest-tructors
@@ -21,3 +23,4 @@
 
 #! /bin/bash
 
+touch $1.cpp $1.hpp
