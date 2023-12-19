@@ -36,8 +36,8 @@ Make it permanent in your .\<shell\>rc : `echo "$PATH+=:~/bin" >> ~/.bashrc` (if
 *	Permanent usage : you might define an alias saved in your .shellrc : `echo "alias claspp='classMakercpp'" >> ~/.bashrc`
 
 ## Illustrations
-
-.cpp
-![alt text](https://github.com/bastienkody/classMakerCpp/images/Animalcpp.png)  
 .hpp
-![alt text](https://github.com/bastienkody/classMakerCpp/images/Animalhpp.png)  
+![alt text](https://github.com/bastienkody/classMakerCpp/blob/main/images/Animalhpp.png)  
+.cpp
+![alt text](https://github.com/bastienkody/classMakerCpp/blob/main/images/Animalcpp.png)  
+
