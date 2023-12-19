@@ -30,7 +30,7 @@
 
 function print_usage()
 {
-	echo -e "Error : empty first argument.\nUsage : ./classMakerCpp <ClassName>"
+	echo -e "\033[1;31mError\033[m: empty first argument. Usage: ./classMakerCpp <ClassName>"
 }
 
 
@@ -89,3 +89,5 @@ touch ${1}.cpp ${1}.hpp
 	echo -e "//	os stream << redefinition" ; echo -e "std::ostream & operator<<(std::ostream& os, const ${1} &rhs)"
 	echo -e "{\n\treturn (os << rhs.getName());\n} "
 	echo ; } > ${1}.cpp
+
+	echo -e "\033[32mFiles created : \033[1;36m${1}.hpp + ${1}.cpp\033[m"
