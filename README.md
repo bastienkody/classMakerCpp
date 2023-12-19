@@ -27,13 +27,13 @@ Feel free to fork the repo, or simply modify the script after having it cloned.
 ## Permanent install (no sudo rights, ie. for 42 dumps)
 You need a specific directory to store you binaries such as : `mkdir ~/bin`  
 Add this repo to the PATH : `$PATH+=:~/bin`  
-Make it permanent in your <shell>.rc : `echo "$PATH+=:~/bin" >> ~/.bash.rc` (if zsh use : ~/.zsh.rc)
+Make it permanent in your .shellrc : `echo "$PATH+=:~/bin" >> ~/.bashrc` (if zsh use : ~/.zshrc)
 
 ## Usage
 *	Launch the script : `./classMakercpp.sh <ClassName>`  
 *	ClassName is a mandatory argument : the name of the class  
 *	This would create both ClassName.cpp and Classname.hpp in your current directory  
-*	For permanent usage it could be interesting to define an alias saved in your shell.rc : `echo "alias claspp='classMakercpp'" >> bash.rc`
+*	For permanent usage it could be interesting to define an alias saved in your .shellrc : `echo "alias claspp='classMakercpp'" >> ~/.bashrc`
 
 ## Illustrations
 
