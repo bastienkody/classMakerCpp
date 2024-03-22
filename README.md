@@ -25,15 +25,18 @@ Feel free to fork the repo, or simply modify the script after having it cloned.
 In the repo you want your class files : `git clone git@github.com:bastienkody/classMakerCpp.git`
 
 ## Permanent install (no sudo rights, ie. for 42 dumps)
-You need a specific directory to store you binaries such as : `mkdir ~/bin`  
-Add this repo to the PATH : `$PATH+=:~/bin`  
-Make it permanent in your .\<shell\>rc : `echo "$PATH+=:~/bin" >> ~/.bashrc` (if zsh use : ~/.zshrc)
+*	You need a specific directory to store you binaries such as : `mkdir ~/bin`  
+*	Clone the repo anywhere : `cd /tmp && git clone git@github.com:bastienkody/classMakerCpp.git`  
+*	Copy the .sh in ~/.bin : `cd /tmp ; cp classMakercpp.sh ~/.bin`  
+*	You may define an alias saved in your .\<shell\>rc : `echo "alias claspp='classMakercpp'" >> ~/.bashrc` (if zsh use : ~/.zshrc)  
+*	Add your binaries repo to the PATH : `$PATH+=:~/bin`  
+*	Make it permanent in your .\<shell\>rc : `echo "$PATH+=:~/bin" >> ~/.bashrc` (if zsh use : ~/.zshrc)
 
 ## Usage
 *	Launch the script : `./classMakercpp.sh <ClassName>`  
 *	ClassName is a mandatory argument : the name of the class  
 *	This would create both ClassName.cpp and Classname.hpp in your current directory  
-*	Permanent usage : you might define an alias saved in your .shellrc : `echo "alias claspp='classMakercpp'" >> ~/.bashrc`
+
 
 ## Illustrations
 Command line :  
