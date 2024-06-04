@@ -58,7 +58,7 @@ touch ${1}.cpp ${1}.hpp
 	echo -e "\t\t${1}(const ${1} & src);"
 	echo -e "\t\t${1} & operator=(const ${1} & rhs);"
 	echo -e "\t\tvoid\t\tsetName(std::string name);"
-	echo -e "\t\tstd::string getName() const;"
+	echo -e "\t\tstd::string const & getName() const;"
 
 	echo -e "\tprivate:"
 	echo -e "\t\tstd::string _name;"
@@ -82,7 +82,7 @@ touch ${1}.cpp ${1}.hpp
 	echo -e "//\tCopy operator" ; echo -e "${1} & ${1}::operator=(const ${1} & rhs)"
 	echo -e "{\n\tif(this != &rhs)\n\t{\n\t\t_name = rhs.getName();\n\t}\n\treturn (*this);\n}"
 	echo
-	echo -e "//\tGetter on _name" ; echo -e "std::string ${1}::getName() const\n{\n\treturn (_name);\n}"
+	echo -e "//\tGetter on _name" ; echo -e "std::string const & ${1}::getName() const\n{\n\treturn (_name);\n}"
 	echo
 	echo -e "//\tSetter on _name" ; echo -e "void ${1}::setName(std::string name)\n{\n\t_name = name;\n}"
 	echo
